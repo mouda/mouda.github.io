@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Mouda's Blog]]></title>
-  <link href="http://mouda.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Machine | Mouda's Blog]]></title>
+  <link href="http://mouda.github.io/blog/categories/machine/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
   <updated>2016-05-28T11:53:58+08:00</updated>
   <id>http://mouda.github.io/</id>
