@@ -4,7 +4,7 @@
   <title><![CDATA[Mouda's blog]]></title>
   <link href="http://mouda.github.io/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-05-28T16:00:01+08:00</updated>
+  <updated>2016-05-29T00:41:47+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -61,10 +61,10 @@ with <em>User Page Site</em>. <!--More--></p>
 <span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install ruby1.9.1-dev
 </span><span class='line'><span class="nv">$ </span>sudo apt-get install nodejs
-</span><span class='line'><span class="nv">$ </span>sudo apt-get install rebenv
 </span><span class='line'><span class="nv">$ </span>sudo apt-get install rbenv
+</span><span class='line'><span class="nv">$ </span>sudo apt-get install rake
 </span><span class='line'><span class="nv">$ </span>sudo gem install bundler
-</span><span class='line'><span class="nv">$ </span>rbenv rebash
+</span><span class='line'><span class="nv">$ </span>rbenv rehash
 </span></code></pre></td></tr></table></div></figure>
 
 

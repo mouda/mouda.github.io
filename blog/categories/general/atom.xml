@@ -4,7 +4,7 @@
   <title><![CDATA[Category: General | Mouda's blog]]></title>
   <link href="http://mouda.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-05-28T16:00:01+08:00</updated>
+  <updated>2016-05-29T00:41:47+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -47,10 +47,10 @@ Codename:   rosa
 <code>bash
 $ sudo apt-get install ruby1.9.1-dev
 $ sudo apt-get install nodejs
-$ sudo apt-get install rebenv
 $ sudo apt-get install rbenv
+$ sudo apt-get install rake
 $ sudo gem install bundler
-$ rbenv rebash
+$ rbenv rehash
 </code>
 To install <strong>Octopress</strong>
 <code>bash
