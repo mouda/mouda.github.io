@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://mouda.github.io/atom.xml" rel="self"/>
+  <link href="http://mouda.github.io/"/>
+  <updated>2016-05-28T15:25:46+08:00</updated>
+  <id>http://mouda.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging With Github Page + Octopress]]></title>
+    <link href="http://mouda.github.io/blog/2016/05/28/blogging-with-github-page-plus-octopress/"/>
+    <updated>2016-05-28T12:05:14+08:00</updated>
+    <id>http://mouda.github.io/blog/2016/05/28/blogging-with-github-page-plus-octopress</id>
+    <content type="html"><![CDATA[<h2>Greate <em>User Pages site</em></h2>
+
+<p>Note that <em>User Pages site</em> and <em>Project Pages</em> are different,
+please go to this link
+<a href="https://help.github.com/articles/user-organization-and-project-pages/">Github io page</a>
+to check the difference between them.
+In this tutorial, I only present how to use Octopress to create static webpages
+with <em>User Page Site</em>. <!--More--></p>
+
+<h2>Envronment Check</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>lsb_release -a
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and here is my working envrionment</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>LSB modules are available.
+</span><span class='line'>Distributor ID:   LinuxMint
+</span><span class='line'>Description:  Linux Mint 17.3 Rosa
+</span><span class='line'>Release:  17.3
+</span><span class='line'>Codename: rosa
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Install <strong>Octopress</strong> and dependend packages</h2>
+
+<p>To install packages:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install ruby1.9.1-dev
+</span><span class='line'><span class="nv">$ </span>sudo apt-get install nodejs
+</span><span class='line'><span class="nv">$ </span>sudo apt-get install rebenv
+</span><span class='line'><span class="nv">$ </span>sudo apt-get install rbenv
+</span><span class='line'><span class="nv">$ </span>sudo gem install bundler
+</span><span class='line'><span class="nv">$ </span>rbenv rebash
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To install <strong>Octopress</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git clone https://github.com/imathis/octopress
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>octopress
+</span><span class='line'><span class="nv">$ </span>rake install
+</span><span class='line'><span class="nv">$ </span>bundle install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>To init <strong>Octopress</strong> with User Page Site </h2>
+
+<p>You need to provide <strong>Github IO</strong> URL during this command execution,
+and please make sure the URL you provide should be look like this:
+<code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</code></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake setup_github_pages
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you can go to <a href="http://octopress.org/docs/deploying/github/">official pages</a>
+to check what have been down when setting up <strong>Github IO</strong> URL.
+Now you can generate and deploy the static pages:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'><span class="nv">$ </span>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This step will genenrate html css files and put them into this folder <code>_deploy</code>.
+Remember that the command <code>setup_github_pages</code> has replaced <code>git remote origin</code>
+with <code>source</code> so the whole project now is dis-linked to the official Octopress
+repository, and now it&rsquo;s managed by you own repository&rsquo;s branch <code>source</code>.
+Meanwhile, <code>master</code> now is to manage the rendered webpages which will be shown
+in <strong>Github IO</strong> user pages.<br/>
+To make sure this has bee done, please check the current branch:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git branch
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you should see:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>* <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now you are good to commit all the things have been changed:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git add .
+</span><span class='line'><span class="nv">$ </span>git commit -m <span class="s1">&#39;your message&#39;</span>
+</span><span class='line'><span class="nv">$ </span>git push origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Configure <strong>Octopress</strong></h2>
+
+<p>Please refere to <a href="http://octopress.org/docs/configuring/">Configuring Octopress</a>
+to see all the details, and I only change the tile, author, username&hellip;etc here.
+Please edit <code>_config.yml</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>url: http://&lt;username&gt;.github.io
+</span><span class='line'>title: &lt;your title&gt;
+</span><span class='line'>subtitle: &lt;your subtitle&gt;
+</span><span class='line'>author: &lt;your author name&gt;
+</span><span class='line'>simple_search: https://www.google.com/search
+</span><span class='line'>description: Note <span class="k">for</span> everything
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>First Post</h2>
+
+<p>To create a new post:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake new_post<span class="o">[</span><span class="s2">&quot;&lt;post title&gt;&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then a new markdown file will be generated in this place <code>source/_posts</code>.
+You can preview the post locally with this command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake preview
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and the local preview URL is avaiable here <code>localhost:4000</code>, you can simply
+close it with <code>ctrl+c</code>. To deploy the posts, use this command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now everything is good to go.</p>
+
+<h2>Reference</h2>
+
+<ul>
+<li><a href="http://wen00072-blog.logdown.com/posts/258497-octopress-installed-and-deployed-on-the-github-pages">Chinese Tutorial</a></li>
+<li><a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">Chinese Tutorial</a></li>
+<li><a href="http://octopress.org/docs/blogging/">Official Website</a></li>
+<li><a href="https://help.github.com/articles/user-organization-and-project-pages/">Github IO Page</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
