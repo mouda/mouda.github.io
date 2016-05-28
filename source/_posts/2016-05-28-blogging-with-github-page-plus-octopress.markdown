@@ -13,8 +13,7 @@ please go to this link
 [Github io page](https://help.github.com/articles/user-organization-and-project-pages/)
 to check the difference between them.
 In this tutorial, I only present how to use Octopress to create static webpages 
-with *User Page Site*. [[MORE]]
-
+with *User Page Site*. <!--More-->
 Envronment Check
 -
 ```bash
