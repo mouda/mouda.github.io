@@ -4,7 +4,7 @@
   <title><![CDATA[Mouda's Blog]]></title>
   <link href="http://mouda.github.io/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-05-28T14:55:01+08:00</updated>
+  <updated>2016-05-28T14:56:22+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ML Research]]></title>
+    <link href="http://mouda.github.io/blog/2016/05/28/ml-research/"/>
+    <updated>2016-05-28T14:56:13+08:00</updated>
+    <id>http://mouda.github.io/blog/2016/05/28/ml-research</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Blogging With Github Page + Octopress]]></title>
