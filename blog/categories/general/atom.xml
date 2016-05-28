@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: General | Mouda's Blog]]></title>
+  <link href="http://mouda.github.io/blog/categories/general/atom.xml" rel="self"/>
+  <link href="http://mouda.github.io/"/>
+  <updated>2016-05-28T13:14:56+08:00</updated>
+  <id>http://mouda.github.io/</id>
+  <author>
+    <name><![CDATA[mouda, toddt]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging With Github Page + Octopress]]></title>
+    <link href="http://mouda.github.io/blog/2016/05/28/blogging-with-github-page-plus-octopress/"/>
+    <updated>2016-05-28T12:05:14+08:00</updated>
+    <id>http://mouda.github.io/blog/2016/05/28/blogging-with-github-page-plus-octopress</id>
+    <content type="html"><![CDATA[<h2>Greate <em>User Pages site</em></h2>
+
+<p>Note that <em>User Pages site</em> and <em>Project Pages</em> are different,
+please go to this link
+<a href="https://help.github.com/articles/user-organization-and-project-pages/">Github io page</a>
+to check the difference between them.
+In this tutorial, I only present how to use Octopress to create static webpages
+with <em>User Page Site</em>. [[MORE]]</p>
+
+<h2>Envronment Check</h2>
+
+<pre><code class="bash">$ lsb_release -a
+</code></pre>
+
+<p>and here is my working envrionment
+<code>
+LSB modules are available.
+Distributor ID: LinuxMint
+Description:    Linux Mint 17.3 Rosa
+Release:    17.3
+Codename:   rosa
+</code></p>
+
+<h2>Install <strong>Octopress</strong> and dependend packages</h2>
+
+<p>To install packages:
+<code>bash
+$ sudo apt-get install ruby1.9.1-dev
+$ sudo apt-get install nodejs
+$ sudo apt-get install rebenv
+$ sudo apt-get install rbenv
+$ sudo gem install bundler
+$ rbenv rebash
+</code>
+To install <strong>Octopress</strong>
+<code>bash
+$ git clone https://github.com/imathis/octopress
+$ cd octopress
+$ rake install
+$ bundle install
+</code></p>
+
+<h2>To init <strong>Octopress</strong> with User Page Site </h2>
+
+<p>You need to provide <strong>Github IO</strong> URL during this command execution,
+and please make sure the URL you provide should be look like this:
+<code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</code></p>
+
+<pre><code class="bash">$ rake setup_github_pages
+</code></pre>
+
+<p>and you can go to <a href="http://octopress.org/docs/deploying/github/">official pages</a>
+to check what have been down when setting up <strong>Github IO</strong> URL.
+Now you can generate and deploy the static pages:
+<code>bash
+$ rake generate
+$ rake deploy
+</code>
+This step will genenrate html css files and put them into this folder <code>_deploy</code>.
+Remember that the command <code>setup_github_pages</code> has replaced <code>git remote origin</code>
+with <code>source</code> so the whole project now is dis-linked to the official Octopress
+repository, and now it&rsquo;s managed by you own repository&rsquo;s branch <code>source</code>.
+Meanwhile, <code>master</code> now is to manage the rendered webpages which will be shown
+in <strong>Github IO</strong> user pages.<br/>
+To make sure this has bee done, please check the current branch:
+<code>bash
+$ git branch
+</code>
+and you should see:
+<code>
+* source
+</code>
+Now you are good to commit all the things have been changed:
+<code>bash
+$ git add .
+$ git commit -m 'your message'
+$ git push origin source
+</code></p>
+
+<h2>Configure <strong>Octopress</strong></h2>
+
+<p>Please refere to <a href="http://octopress.org/docs/configuring/">Configuring Octopress</a>
+to see all the details, and I only change the tile, author, username&hellip;etc here.
+Please edit <code>_config.yml</code>:
+<code>
+url: http://&lt;username&gt;.github.io
+title: &lt;your title&gt;
+subtitle: &lt;your subtitle&gt;
+author: &lt;your author name&gt;
+simple_search: https://www.google.com/search
+description: Note for everything
+</code></p>
+
+<h2>First Post</h2>
+
+<p>To create a new post:
+<code>bash
+$ rake new_post["&lt;post title&gt;"]
+</code>
+then a new markdown file will be generated in this place <code>source/_posts</code>.
+You can preview the post locally with this command:
+<code>bash
+$ rake preview
+</code>
+and the local preview URL is avaiable here <code>localhost:4000</code>, you can simply
+close it with <code>ctrl+c</code>. To deploy the posts, use this command:
+<code>bash
+$ rake deploy
+</code>
+Now everything is good to go.</p>
+
+<h2>Reference</h2>
+
+<ul>
+<li><a href="http://wen00072-blog.logdown.com/posts/258497-octopress-installed-and-deployed-on-the-github-pages">Chinese Tutorial</a></li>
+<li><a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">Chinese Tutorial</a></li>
+<li><a href="http://octopress.org/docs/blogging/">Official Website</a></li>
+<li><a href="https://help.github.com/articles/user-organization-and-project-pages/">Github IO Page</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
