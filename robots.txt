@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://mouda.github.io/sitemap.xml 
