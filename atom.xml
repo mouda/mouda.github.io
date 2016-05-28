@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://mouda.github.io/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-05-28T15:25:46+08:00</updated>
+  <updated>2016-05-28T15:53:00+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -189,6 +189,29 @@ close it with <code>ctrl+c</code>. To deploy the posts, use this command:</p>
 <li><a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">Chinese Tutorial</a></li>
 <li><a href="http://octopress.org/docs/blogging/">Official Website</a></li>
 <li><a href="https://help.github.com/articles/user-organization-and-project-pages/">Github IO Page</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Materials of Machine Learning]]></title>
+    <link href="http://mouda.github.io/blog/2016/05/28/learning-materials-of-machine-learning/"/>
+    <updated>2016-05-28T11:34:26+08:00</updated>
+    <id>http://mouda.github.io/blog/2016/05/28/learning-materials-of-machine-learning</id>
+    <content type="html"><![CDATA[<h2>Online Course</h2>
+
+<ul>
+<li>Machine Learning, Andrew Ng: <a href="https://www.coursera.org/learn/machine-learning">Coursera</a></li>
+<li>Machine Learning Foundations, Hsuan-Tien Lin: <a href="https://www.coursera.org/course/ntumlone">Coursera</a></li>
+<li>Machine Learning Techniques, Hsuan-Tien Lin: <a href="https://www.coursera.org/course/ntumltwo">Coursera</a></li>
+</ul>
+
+
+<h2>Online Books</h2>
+
+<ul>
+<li>Deep Learning Book, Ian Goodfellow, Yoshua Bengio and Aaron Courville: <a href="http://www.deeplearningbook.org/">Book</a></li>
 </ul>
 
 ]]></content>
