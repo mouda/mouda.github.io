@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Learning | Mouda's Blog]]></title>
+  <link href="http://mouda.github.io/blog/categories/learning/atom.xml" rel="self"/>
+  <link href="http://mouda.github.io/"/>
+  <updated>2016-05-28T14:35:49+08:00</updated>
+  <id>http://mouda.github.io/</id>
+  <author>
+    <name><![CDATA[mouda, toddt]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Materials of Machine Learning]]></title>
+    <link href="http://mouda.github.io/blog/2016/05/28/learning-materials-of-machine-learning/"/>
+    <updated>2016-05-28T11:34:26+08:00</updated>
+    <id>http://mouda.github.io/blog/2016/05/28/learning-materials-of-machine-learning</id>
+    <content type="html"><![CDATA[<h2>Online Course</h2>
+
+<ul>
+<li>Machine Learning, Andrew Ng: <a href="https://www.coursera.org/learn/machine-learning">Coursera</a></li>
+<li>Machine Learning Foundations, Hsuan-Tien Lin: <a href="https://www.coursera.org/course/ntumlone">Coursera</a></li>
+<li>Machine Learning Techniques, Hsuan-Tien Lin: <a href="https://www.coursera.org/course/ntumltwo">Coursera</a></li>
+</ul>
+
+
+<h2>Online Books</h2>
+
+<ul>
+<li>Deep Learning Book, Ian Goodfellow, Yoshua Bengio and Aaron Courville: <a href="http://www.deeplearningbook.org/">Book</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
