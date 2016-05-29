@@ -4,7 +4,7 @@
   <title><![CDATA[Category: General | Mouda's blog]]></title>
   <link href="http://mouda.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-05-29T20:52:51+08:00</updated>
+  <updated>2016-05-29T21:45:05+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -21,10 +21,8 @@
     <content type="html"><![CDATA[<h2>Greate <em>User Pages site</em></h2>
 
 <p>Note that <em>User Pages site</em> and <em>Project Pages</em> are different,
-please go to this link
-<a href="https://help.github.com/articles/user-organization-and-project-pages/">Github io page</a>
-to check the difference between them.
-In this tutorial, I only present how to use Octopress to create static webpages
+please go to <a href="https://help.github.com/articles/user-organization-and-project-pages/" title="Github IO Page">Github_user_pages</a> to check the difference between them.
+Follow <a href="http://wen00072-blog.logdown.com/posts/258497-octopress-installed-and-deployed-on-the-github-pages" title="Chinese Tutorial">Chinese_guide</a>, I only present how to use Octopress to create static webpages
 with <em>User Page Site</em>. <!--More--></p>
 
 <h2>Envronment Check</h2>
@@ -69,7 +67,7 @@ and please make sure the URL you provide should be look like this:
 <pre><code class="bash">$ rake setup_github_pages
 </code></pre>
 
-<p>and you can go to <a href="http://octopress.org/docs/deploying/github/">official pages</a>
+<p>and you can go to <a href="http://octopress.org/docs/deploying/github/">Octopress_deploying</a>
 to check what have been down when setting up <strong>Github IO</strong> URL.
 Now you can generate and deploy the static pages:
 <code>bash
@@ -99,7 +97,7 @@ $ git push origin source
 
 <h2>Configure <strong>Octopress</strong></h2>
 
-<p>Please refere to <a href="http://octopress.org/docs/configuring/">Configuring Octopress</a>
+<p>Please refere to <a href="http://octopress.org/docs/blogging/" title="Official Website">Octopress_configuring</a>
 to see all the details, and I only change the tile, author, username&hellip;etc here.
 Please edit <code>_config.yml</code>:
 <code>
@@ -129,14 +127,7 @@ $ rake deploy
 </code>
 Now everything is good to go.</p>
 
-<h2>Reference</h2>
-
-<ul>
-<li><a href="http://wen00072-blog.logdown.com/posts/258497-octopress-installed-and-deployed-on-the-github-pages">Chinese Tutorial</a></li>
-<li><a href="http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/">Chinese Tutorial</a></li>
-<li><a href="http://octopress.org/docs/blogging/">Official Website</a></li>
-<li><a href="https://help.github.com/articles/user-organization-and-project-pages/">Github IO Page</a></li>
-</ul>
+<!---Reference--->
 
 ]]></content>
   </entry>
