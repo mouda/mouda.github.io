@@ -4,7 +4,7 @@
   <title><![CDATA[Mouda's blog]]></title>
   <link href="http://mouda.github.io/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-05-29T21:45:05+08:00</updated>
+  <updated>2016-05-29T22:25:42+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Maintain Octopress Blog on Different Machine]]></title>
+    <link href="http://mouda.github.io/blog/2016/05/29/maintain-octopress-blog-on-different-machine/"/>
+    <updated>2016-05-29T22:05:44+08:00</updated>
+    <id>http://mouda.github.io/blog/2016/05/29/maintain-octopress-blog-on-different-machine</id>
+    <content type="html"><![CDATA[<p>Sometimes I need to maintain my blog on different machine but we cannot just git clone
+the github pages because it only clone the renders website into local.
+This is caused by <code>rake setup_github_pages</code>
+which make <code>remote source</code> to host source code and <code>remote master</code> to host rendered pages.</p>
+
+<!--more-->
+
+
+<p>To get this done, we need to init git from scratch</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir &lt;empty directory&gt; <span class="o">&amp;&amp;</span> <span class="nb">cd</span> &lt;empty directory&gt;
+</span><span class='line'><span class="nv">$ </span>git init
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Git add remote origin and pull <code>remote source</code> branch to local</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git remote add origin &lt;octopress git repository&gt;
+</span><span class='line'><span class="nv">$ </span>git pull origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>note that we need to create the local branch <code>source</code> and delete <code>master</code> to
+avoid ambiguous version control.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git checkout -b <span class="nb">source</span>
+</span><span class='line'><span class="nv">$ </span>git branch -D master
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, to eable local preview and deploy, we need to create <code>_deploy</code> folder and synced to
+<code>remote master</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir _deploy <span class="o">&amp;&amp;</span> <span class="nb">cd </span>_deploy
+</span><span class='line'><span class="nv">$ </span>git init
+</span><span class='line'><span class="nv">$ </span>git remote add origin &lt;octopress git repository&gt;
+</span><span class='line'><span class="nv">$ </span>git pull origin master
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, we are ready to maintain Octopress source and deploy website on the
+other machine rather origininal one.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Github Octopress With Google Analytics]]></title>
