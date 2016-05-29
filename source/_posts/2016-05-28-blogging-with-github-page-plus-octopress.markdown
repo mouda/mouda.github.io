@@ -9,10 +9,8 @@ categories: General
 Greate *User Pages site*
 -
 Note that *User Pages site* and *Project Pages* are different,
-please go to this link
-[Github io page](https://help.github.com/articles/user-organization-and-project-pages/)
-to check the difference between them.
-In this tutorial, I only present how to use Octopress to create static webpages 
+please go to [Github_user_pages][] to check the difference between them.
+Follow [Chinese_guide][], I only present how to use Octopress to create static webpages 
 with *User Page Site*. <!--More-->
 Envronment Check
 -
@@ -33,10 +31,10 @@ To install packages:
 ```bash
 $ sudo apt-get install ruby1.9.1-dev
 $ sudo apt-get install nodejs
-$ sudo apt-get install rebenv
 $ sudo apt-get install rbenv
+$ sudo apt-get install rake
 $ sudo gem install bundler
-$ rbenv rebash
+$ rbenv rehash
 ```
 To install **Octopress**
 ```bash
@@ -54,7 +52,7 @@ and please make sure the URL you provide should be look like this:
 ```bash
 $ rake setup_github_pages
 ```
-and you can go to [official pages](http://octopress.org/docs/deploying/github/)
+and you can go to [Octopress_deploying][]
 to check what have been down when setting up **Github IO** URL. 
 Now you can generate and deploy the static pages:
 ```bash
@@ -83,7 +81,7 @@ $ git push origin source
 ```
 Configure **Octopress**
 -
-Please refere to [Configuring Octopress](http://octopress.org/docs/configuring/)
+Please refere to [Octopress_configuring][]
 to see all the details, and I only change the tile, author, username...etc here.
 Please edit `_config.yml`:
 ```
@@ -111,9 +109,10 @@ close it with `ctrl+c`. To deploy the posts, use this command:
 $ rake deploy
 ```
 Now everything is good to go.
-Reference
--
-* [Chinese Tutorial](http://wen00072-blog.logdown.com/posts/258497-octopress-installed-and-deployed-on-the-github-pages)
-* [Chinese Tutorial](http://zerodie.github.io/blog/2012/01/19/octopress-github-pages/)
-* [Official Website](http://octopress.org/docs/blogging/)
-* [Github IO Page](https://help.github.com/articles/user-organization-and-project-pages/)
+
+<!---Reference--->
+[Chinese_guide]: http://wen00072-blog.logdown.com/posts/258497-octopress-installed-and-deployed-on-the-github-pages "Chinese Tutorial"
+[Octopress_configuring]: http://octopress.org/docs/blogging/ "Official Website"
+[Octopress_deploying]: http://octopress.org/docs/deploying/github/
+[Github_user_pages]: https://help.github.com/articles/user-organization-and-project-pages/ "Github IO Page"
+
