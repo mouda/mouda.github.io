@@ -4,7 +4,7 @@
   <title><![CDATA[Mouda's blog]]></title>
   <link href="http://mouda.github.io/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-05-29T22:29:20+08:00</updated>
+  <updated>2016-05-30T11:32:51+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -165,7 +165,7 @@ register <a href="https://www.google.com/intl/zh-TW/analytics/">Google Analytics
     <content type="html"><![CDATA[<h2>Greate <em>User Pages site</em></h2>
 
 <p>Note that <em>User Pages site</em> and <em>Project Pages</em> are different,
-please go to <a href="https://help.github.com/articles/user-organization-and-project-pages/" title="Github IO Page">Github_user_pages</a> to check the difference between them.
+please go to <a href="https://help.github.com/articles/user-organization-and-project-pages/" title="Github IO Page">Github user pages</a> to check the difference between them.
 Follow <a href="http://wen00072-blog.logdown.com/posts/258497-octopress-installed-and-deployed-on-the-github-pages" title="Chinese Tutorial">Chinese_guide</a>, I only present how to use Octopress to create static webpages
 with <em>User Page Site</em>. <!--More--></p>
 
@@ -190,6 +190,11 @@ with <em>User Page Site</em>. <!--More--></p>
 </span><span class='line'>Codename: rosa
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p>Note taht LinuxMint 17.3 is forked form Ubuntu 14.04 LTS, and Octopress 3.0 need
+Ruby 19.1+ support.
+If your working environment is Ubuntu 12.04, please following
+<a href="https://leonard.io/blog/2012/05/installing-ruby-1-9-3-on-ubuntu-12-04-precise-pengolin/">this guide</a> to install Ruby 19.1+.</p>
 
 <h2>Install <strong>Octopress</strong> and dependend packages</h2>
 
