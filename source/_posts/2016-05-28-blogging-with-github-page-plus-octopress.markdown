@@ -9,7 +9,7 @@ categories: General
 Greate *User Pages site*
 -
 Note that *User Pages site* and *Project Pages* are different,
-please go to [Github_user_pages][] to check the difference between them.
+please go to [Github user pages][Github_user_pages] to check the difference between them.
 Follow [Chinese_guide][], I only present how to use Octopress to create static webpages 
 with *User Page Site*. <!--More-->
 Envronment Check
@@ -25,6 +25,10 @@ Description:	Linux Mint 17.3 Rosa
 Release:	17.3
 Codename:	rosa
 ```
+Note taht LinuxMint 17.3 is forked form Ubuntu 14.04 LTS, and Octopress 3.0 need
+Ruby 19.1+ support.
+If your working environment is Ubuntu 12.04, please following
+[this guide][Ubuntu1204_wit_Ruby193] to install Ruby 19.1+.
 Install **Octopress** and dependend packages
 -
 To install packages:
@@ -115,4 +119,5 @@ Now everything is good to go.
 [Octopress_configuring]: http://octopress.org/docs/blogging/ "Official Website"
 [Octopress_deploying]: http://octopress.org/docs/deploying/github/
 [Github_user_pages]: https://help.github.com/articles/user-organization-and-project-pages/ "Github IO Page"
+[Ubuntu1204_wit_Ruby193]: https://leonard.io/blog/2012/05/installing-ruby-1-9-3-on-ubuntu-12-04-precise-pengolin/
 
