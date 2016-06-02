@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Machine | Mouda's blog]]></title>
   <link href="http://mouda.github.io/blog/categories/machine/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-05-29T22:29:20+08:00</updated>
+  <updated>2016-06-02T23:20:41+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -18,7 +18,12 @@
     <link href="http://mouda.github.io/blog/2016/05/28/learning-materials-of-machine-learning/"/>
     <updated>2016-05-28T11:34:26+08:00</updated>
     <id>http://mouda.github.io/blog/2016/05/28/learning-materials-of-machine-learning</id>
-    <content type="html"><![CDATA[<h2>Online Course</h2>
+    <content type="html"><![CDATA[<p>I would like to list all the Machine Learning materials that I collected from Internat.</p>
+
+<!--more-->
+
+
+<h2>Online Course</h2>
 
 <ul>
 <li>Machine Learning, Andrew Ng: <a href="https://www.coursera.org/learn/machine-learning">Coursera</a></li>
@@ -31,6 +36,18 @@
 
 <ul>
 <li>Deep Learning Book, Ian Goodfellow, Yoshua Bengio and Aaron Courville: <a href="http://www.deeplearningbook.org/">Book</a></li>
+<li>Standford Machine Learning Materials: <a href="http://cs229.stanford.edu/materials.html">Books</a></li>
+<li>CS231n: Convolutional Neural Networks for Visual Recognition: <a href="http://vision.stanford.edu/teaching/cs231n/index.html">Website</a></li>
+<li>Convex Optimization: <a href="https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf">Books</a></li>
+</ul>
+
+
+<h2>Blogs</h2>
+
+<ul>
+<li>Andrej Karpathy blog: <a href="http://karpathy.github.io/neuralnets/">Blogs</a></li>
+<li>Off the Convex Path: <a href="http://www.offconvex.org/">Blogs</a></li>
+<li>Paper Summary for Deep Learning Research (Simplified Chinese): <a href="http://zhangliliang.com/">Blogs</a></li>
 </ul>
 
 ]]></content>
