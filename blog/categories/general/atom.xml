@@ -4,7 +4,7 @@
   <title><![CDATA[Category: General | Mouda's blog]]></title>
   <link href="http://mouda.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-06-02T23:20:41+08:00</updated>
+  <updated>2016-06-05T10:14:30+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -130,6 +130,10 @@ close it with <code>ctrl+c</code>. To deploy the posts, use this command:
 $ rake deploy
 </code>
 Now everything is good to go.</p>
+
+<h2>To add comment into Octopress</h2>
+
+<p>You can use Disqus to get this done by following <a href="https://eager.io/blog/installing-disqus-on-octopress/">Guide</a></p>
 
 <!---Reference--->
 
