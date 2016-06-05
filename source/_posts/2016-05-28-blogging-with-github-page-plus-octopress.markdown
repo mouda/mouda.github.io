@@ -114,6 +114,10 @@ $ rake deploy
 ```
 Now everything is good to go.
 
+To add comment into Octopress
+-
+You can use Disqus to get this done by following [Guide](https://eager.io/blog/installing-disqus-on-octopress/)
+
 <!---Reference--->
 [Chinese_guide]: http://wen00072-blog.logdown.com/posts/258497-octopress-installed-and-deployed-on-the-github-pages "Chinese Tutorial"
 [Octopress_configuring]: http://octopress.org/docs/blogging/ "Official Website"
