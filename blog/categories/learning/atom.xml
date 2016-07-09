@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Learning | Mouda's blog]]></title>
   <link href="http://mouda.github.io/blog/categories/learning/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-06-05T10:14:30+08:00</updated>
+  <updated>2016-07-09T10:08:31+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -26,9 +26,17 @@
 <h2>Online Course</h2>
 
 <ul>
-<li>Machine Learning, Andrew Ng: <a href="https://www.coursera.org/learn/machine-learning">Coursera</a></li>
-<li>Machine Learning Foundations, Hsuan-Tien Lin: <a href="https://www.coursera.org/course/ntumlone">Coursera</a></li>
-<li>Machine Learning Techniques, Hsuan-Tien Lin: <a href="https://www.coursera.org/course/ntumltwo">Coursera</a></li>
+<li>Machine Learning, Prof. Andrew Ng, Standford University: <a href="https://www.coursera.org/learn/machine-learning">Coursera</a></li>
+<li>Machine Learning Foundations, Prof. Hsuan-Tien Lin, National Taiwan University: <a href="https://www.coursera.org/course/ntumlone">Coursera</a></li>
+<li>Machine Learning Techniques, Prof. Hsuan-Tien Lin, National Taiwan University: <a href="https://www.coursera.org/course/ntumltwo">Coursera</a></li>
+<li>Machine Learning and haveing it deep and structured, Prof. Hung-yi Lee, National Taiwan University: <a href="http://speech.ee.ntu.edu.tw/~tlkagk/courses.html">Website</a></li>
+<li>Machine Learning, University of Oxford: <a href="https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/">Website</a></li>
+<li>CS231n: Convolutional Neural Networks for Visual Recognition, Standford University: <a href="https://www.youtube.com/playlist?list=PLLvH2FwAQhnpj1WEB-jHmPuUeQ8mX-XXG">Youtube</a>
+
+<ul>
+<li>Course material is available here: <a href="http://cs231n.github.io/">Website</a></li>
+</ul>
+</li>
 </ul>
 
 
