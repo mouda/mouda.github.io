@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Machine | Mouda's blog]]></title>
   <link href="http://mouda.github.io/blog/categories/machine/atom.xml" rel="self"/>
   <link href="http://mouda.github.io/"/>
-  <updated>2016-07-09T10:08:31+08:00</updated>
+  <updated>2016-09-10T11:47:08+08:00</updated>
   <id>http://mouda.github.io/</id>
   <author>
     <name><![CDATA[mouda, toddt]]></name>
@@ -23,7 +23,7 @@
 <!--more-->
 
 
-<h2>Online Course</h2>
+<h2>Entry Level Online Course</h2>
 
 <ul>
 <li>Machine Learning, Prof. Andrew Ng, Standford University: <a href="https://www.coursera.org/learn/machine-learning">Coursera</a></li>
@@ -31,12 +31,24 @@
 <li>Machine Learning Techniques, Prof. Hsuan-Tien Lin, National Taiwan University: <a href="https://www.coursera.org/course/ntumltwo">Coursera</a></li>
 <li>Machine Learning and haveing it deep and structured, Prof. Hung-yi Lee, National Taiwan University: <a href="http://speech.ee.ntu.edu.tw/~tlkagk/courses.html">Website</a></li>
 <li>Machine Learning, University of Oxford: <a href="https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/">Website</a></li>
-<li>CS231n: Convolutional Neural Networks for Visual Recognition, Standford University: <a href="https://www.youtube.com/playlist?list=PLLvH2FwAQhnpj1WEB-jHmPuUeQ8mX-XXG">Youtube</a>
+<li>CS231n: Convolutional Neural Networks for Visual Recognition, Standford University: <a href="https://www.youtube.com/playlist?list=PLLvH2FwAQhnpj1WEB-jHmPuUeQ8mX-XXG">Youtube</a> <a href="http://cs231n.github.io/">Course material Website</a></li>
+</ul>
+
+
+<h2>Advance Online Course</h2>
+
+<p>Origin recommend course list is post in <a href="https://www.reddit.com/r/MachineLearning/comments/51qhc8/phdlevel_courses/">Reddit</a></p>
 
 <ul>
-<li>Course material is available here: <a href="http://cs231n.github.io/">Website</a></li>
-</ul>
-</li>
+<li>Advanced Introduction to ML, CMU: <a href="https://www.youtube.com/playlist?list=PL4DwY1suLMkcu-wytRDbvBNmx57CdQ2pJ">Youtube</a>, <a href="http://www.cs.cmu.edu/~bapoczos/Classes/ML10715_2015Fall/index.html">Course Material Website</a></li>
+<li>Large Scale ML, Toronto: <a href="http://www.cs.toronto.edu/~rsalakhu/STA4273_2015/lectures.html">Website</a></li>
+<li>Statistical Learning Theory and Applications, MIT: <a href="https://www.youtube.com/playlist?list=PLyGKBDfnk-iDj3FBd0Avr_dLbrU8VG73O">Youtube</a>, <a href="http://www.mit.edu/~9.520/fall15/index.html">Course Material Website</a></li>
+<li>Regularization Methods for ML: <a href="https://www.youtube.com/playlist?list=PLbF0BXX_6CPJ20Gf_KbLFnPWjFTvvRwCO">Youtube</a>, <a href="http://lcsl.mit.edu/courses/regml/regml2016/">Course Material Website</a></li>
+<li>Statistical ML, CMU: <a href="https://www.youtube.com/playlist?list=PLTB9VQq8WiaCBK2XrtYn5t9uuPdsNm7YE">Youtube</a>, <a href="http://www.stat.cmu.edu/~larry/=sml/">Course Material Website</a></li>
+<li>Convex Optimization, CMU: <a href="https://www.youtube.com/playlist?list=PLjbUi5mgii6BZBhJ9nW7eydgycyCOYeZ6">Youtube</a>, <a href="http://www.stat.cmu.edu/~ryantibs/convexopt-S15/">Course Material Website</a></li>
+<li>Probabilistic Graphical Model, CMU: <a href="http://www.cs.cmu.edu/~epxing/Class/10708-14/lecture.html">Course Material Website</a></li>
+<li>Statistical Learning Theory, UC Berkeley: <a href="http://www.stat.berkeley.edu/~bartlett/courses/2014spring-cs281bstat241b/">Course Material Website</a></li>
+<li>Machine Learning for Computer Vision, TU Munchen: <a href="http://vision.in.tum.de/teaching/ws2013/ml_ws13">Courville Materials Website</a></li>
 </ul>
 
 
@@ -56,6 +68,7 @@
 <li>Andrej Karpathy blog: <a href="http://karpathy.github.io/neuralnets/">Blogs</a></li>
 <li>Off the Convex Path: <a href="http://www.offconvex.org/">Blogs</a></li>
 <li>Paper Summary for Deep Learning Research (Simplified Chinese): <a href="http://zhangliliang.com/">Blogs</a></li>
+<li>Charles H Martin blog: <a href="https://charlesmartin14.wordpress.com/">Blogs</a></li>
 </ul>
 
 ]]></content>
