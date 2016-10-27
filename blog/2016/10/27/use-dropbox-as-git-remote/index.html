@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Maintain Octopress Blog on Different Machine - Mouda's blog</title>
+  <title>Use Dropbox as Git Remote - Mouda's blog</title>
   <meta name="author" content="mouda, toddt">
 
   
-  <meta name="description" content="Sometimes I need to maintain my blog on different machine but we cannot just git clone
-the github pages because it only clone the renders website &hellip;">
+  <meta name="description" content="Some of git repository are just used for personal learning such as assignment of Coursera and leetcode.
+I think it&rsquo;s better to keep these sorts &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ the github pages because it only clone the renders website &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mouda.github.io/blog/2016/05/29/maintain-octopress-blog-on-different-machine/">
+  <link rel="canonical" href="http://mouda.github.io/blog/2016/10/27/use-dropbox-as-git-remote/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mouda's blog" type="application/atom+xml">
@@ -91,7 +91,7 @@ the github pages because it only clone the renders website &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Maintain Octopress Blog on Different Machine</h1>
+      <h1 class="entry-title">Use Dropbox as Git Remote</h1>
     
     
       <p class="meta">
@@ -100,7 +100,7 @@ the github pages because it only clone the renders website &hellip;">
 
 
 
-<time class='entry-date' datetime='2016-05-29T22:05:44+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:05 pm</span></time>
+<time class='entry-date' datetime='2016-10-27T23:48:48+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:48 pm</span></time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://mouda.github.io">Comments</a>
@@ -110,74 +110,11 @@ the github pages because it only clone the renders website &hellip;">
   </header>
 
 
-<div class="entry-content"><p>Sometimes I need to maintain my blog on different machine but we cannot just git clone
-the github pages because it only clone the renders website into local.
-This is caused by <code>rake setup_github_pages</code>
-which make <code>remote source</code> to host source code and <code>remote master</code> to host rendered pages.</p>
+<div class="entry-content"><p>Some of git repository are just used for personal learning such as assignment of Coursera and leetcode.
+I think it&rsquo;s better to keep these sorts of source code in personal clould becasue is worthless to share.</p>
 
-<!--more-->
-
-
-<p>To get this done, we need to init git from scratch</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir &lt;empty directory&gt; <span class="o">&amp;&amp;</span> <span class="nb">cd</span> &lt;empty directory&gt;
-</span><span class='line'><span class="nv">$ </span>git init
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Git add remote origin and pull <code>remote source</code> branch to local</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git remote add origin &lt;octopress git repository&gt;
-</span><span class='line'><span class="nv">$ </span>git pull origin <span class="nb">source</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>note that we need to create the local branch <code>source</code> and delete <code>master</code> to
-avoid ambiguous version control.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git checkout -b <span class="nb">source</span>
-</span><span class='line'><span class="nv">$ </span>git branch -D master
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now, to eable local preview and deploy, we need to create <code>_deploy</code> folder and synced to
-<code>remote master</code>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mkdir _deploy <span class="o">&amp;&amp;</span> <span class="nb">cd </span>_deploy
-</span><span class='line'><span class="nv">$ </span>git init
-</span><span class='line'><span class="nv">$ </span>git remote add origin &lt;octopress git repository&gt;
-</span><span class='line'><span class="nv">$ </span>git pull origin master
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now, we are ready to maintain Octopress source and deploy website on the
-other machine rather origininal one.</p>
-
-<p>To update source:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git push origin <span class="nb">source</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>To deploy pages:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake deploy
-</span></code></pre></td></tr></table></div></figure>
-
-
-
+<p>There is a way to make Dropbox as git remote and here is the reference link and github project:
+<a href="http://www.anishathalye.com/2015/08/19/git-remote-dropbox/">Tutorial</a> and <a href="https://github.com/anishathalye/git-remote-dropbox">Github</a>.</p>
 </div>
 
 
@@ -193,15 +130,21 @@ other machine rather origininal one.</p>
 
 
 
-<time class='entry-date' datetime='2016-05-29T22:05:44+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:05 pm</span></time>
+<time class='entry-date' datetime='2016-10-27T23:48:48+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:48 pm</span></time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/general/'>general</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mouda.github.io/blog/2016/05/29/maintain-octopress-blog-on-different-machine/" data-via="" data-counturl="http://mouda.github.io/blog/2016/05/29/maintain-octopress-blog-on-different-machine/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mouda.github.io/blog/2016/10/27/use-dropbox-as-git-remote/" data-via="" data-counturl="http://mouda.github.io/blog/2016/10/27/use-dropbox-as-git-remote/" >Tweet</a>
   
   
   
@@ -212,10 +155,8 @@ other machine rather origininal one.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2016/05/29/github-octopress-with-google-analytics/" title="Previous Post: Github Octopress with Google Analytics">&laquo; Github Octopress with Google Analytics</a>
+        <a class="basic-alignment left" href="/blog/2016/05/29/maintain-octopress-blog-on-different-machine/" title="Previous Post: Maintain Octopress Blog on Different Machine">&laquo; Maintain Octopress Blog on Different Machine</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2016/10/27/use-dropbox-as-git-remote/" title="Next Post: Use Dropbox as Git Remote">Use Dropbox as Git Remote &raquo;</a>
       
     </p>
   </footer>
@@ -281,8 +222,8 @@ other machine rather origininal one.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://mouda.github.io/blog/2016/05/29/maintain-octopress-blog-on-different-machine/';
-        var disqus_url = 'http://mouda.github.io/blog/2016/05/29/maintain-octopress-blog-on-different-machine/';
+        var disqus_identifier = 'http://mouda.github.io/blog/2016/10/27/use-dropbox-as-git-remote/';
+        var disqus_url = 'http://mouda.github.io/blog/2016/10/27/use-dropbox-as-git-remote/';
         var disqus_script = 'embed.js';
       
     (function () {
